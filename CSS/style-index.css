@@ -1,0 +1,138 @@
+:root{
+    --main-c:#76c5f0;
+    --border-r:.2rem;
+}
+
+/** Estilos Generales **/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.wrap-cta{
+    padding: 1.5rem 0;
+}
+
+.cta-a{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+/** Header+Navbar **/
+
+.header-landing{
+    display: flex;
+    justify-content: center;
+    background: #313638;
+    padding: 0.25rem;
+}
+
+.wrap-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-header {
+    width: 120px;
+    height: auto;
+}
+
+/** Hero Section **/
+
+.hero-section{
+    height: 100vh;
+    background: url(/Imagenes/IMG-20220824-WA0016.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(106,141,163,0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-hero-section{
+    max-width: 600px;
+    color: #fff;
+    padding: 15%;
+    font-weight: bold;
+}
+
+/** Footer **/
+
+.footer-section{
+    max-width:max;
+    margin: 0 auto;
+    background-color: #313638;
+}
+
+.menu-header-section{
+    padding: 1rem;
+}
+
+.wrap-menu-header-section ul li{
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+ .wrap-menu-header-section ul{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+.wrap-social-logos ul{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: start;
+    margin: 0;
+}
+
+.social-logo{
+    max-width: 50px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer-creds{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #313638;
+    height: 55px;
+}
