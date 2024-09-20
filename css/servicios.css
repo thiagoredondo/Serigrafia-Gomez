@@ -71,7 +71,7 @@ h3 {
 .body-hero-section {
     position: relative;
     min-height: 100vh; /* Ajustado a 100vh */
-    background: url(/img/IMG-20220824-WA0016.jpg);
+    background: url(../img/IMG-20220824-WA0016.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
