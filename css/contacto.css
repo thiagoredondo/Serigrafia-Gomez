@@ -4,7 +4,6 @@
 }
 
 /** Estilos Generales **/
-
 html, body {
     margin: 0;
     padding: 0;
@@ -53,7 +52,6 @@ h3 {
 }
 
 /** Header **/
-
 .header-landing {
     display: flex;
     justify-content: center;
@@ -73,14 +71,13 @@ h3 {
 }
 
 /** Hero Section **/
-
 .hero-section {
     flex: 1; 
     background: url(../img/IMG-20220824-WA0016.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(106,141,163,0.7);
+    background-color: rgba(106, 141, 163, 0.7);
     background-blend-mode: multiply;
     display: flex;
     align-items: center;
@@ -119,7 +116,7 @@ h3 {
 }
 
 .contact-left, .contact-right {
-    flex: 1; /* Hace que ambos ocupen el mismo ancho */
+    flex: 1;
 }
 
 .contact-right {
@@ -132,9 +129,9 @@ h3 {
 
 .serigrafia-map {
     width: 100%;
-    height: auto; /* Ocupa toda la altura del contenedor */
+    height: auto;
     border: none;
-    border-radius: 40px; /* Aplica el borde redondeado al iframe */
+    border-radius: 40px;
     min-height: 600px;
     height: 100%;
 }
@@ -170,10 +167,10 @@ h3 {
 
 .contact-inputs-textarea {
     width: 90%;
-    height: 140px; /* Mantener la altura deseada */
+    height: 140px;
     border: none;
     outline: none;
-    padding: 10px 5%; /* Ajustar padding para centrar el placeholder */
+    padding: 10px 5%;
     font-weight: 500;
     color: #000000;
     border-radius: 10px;
@@ -216,7 +213,6 @@ h3 {
 }
 
 /** Footer **/
-
 .footer-section {
     background-color: #313638;
 }

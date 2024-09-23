@@ -3,7 +3,7 @@
     --border-r: .2rem;
 }
 
-/* Estilos Generales */
+/** Estilos Generales **/
 html, body {
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ h3 {
     font-size: 2.2rem;
 }
 
-/* Header */
+/** Header **/
 .header-landing {
     display: flex;
     justify-content: center;
@@ -84,10 +84,10 @@ h3 {
     align-items: center;
 }
 
-/* Hero Section */
+/** Hero Section **/
 .body-hero-section {
     position: relative;
-    min-height: 100vh; /* Ajustado a 100vh */
+    min-height: 100vh;
     background: url(../img/IMG-20220824-WA0016.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -110,32 +110,32 @@ h3 {
 }
 
 .wrap-pic-hero-section {
-    display: flex; /* Usamos flexbox */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    justify-content: center; /* Centrar elementos en la línea */
-    gap: 15px; /* Espacio entre imágenes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
 }
 
 .wrap-pic-hero-section ul {
     padding: 0;
     margin: 0;
-    display: contents; /* Permite que los hijos usen el grid sin problemas */
+    display: contents;
 }
 
 .wrap-pic-hero-section li {
-    flex: 0 1 calc(25% - 15px); /* Cada imagen ocupará un 25% del ancho menos el espacio */
+    flex: 0 1 calc(25% - 15px);
 }
 
 .wrap-pic-hero-section img {
-    width: 100%; /* Las imágenes ocuparán todo el ancho de la celda */
-    height: 200px; /* Altura fija para todas las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
     min-width: 170px;
 }
 
-/* Footer */
+/** Footer **/
 .footer-section {
     max-width: 100%;
     margin: 0 auto;
@@ -164,10 +164,13 @@ h3 {
     height: 55px;
 }
 
-
-/* Media Queries */
+/** Media Queries **/
 @media (max-width: 480px) {
-    /* Estilos generales */
+
+    /** Estilos Generales **/
+    html, body {
+        overflow-x: hidden;
+    }
 
     p {
         font-size: 1rem;
@@ -182,56 +185,54 @@ h3 {
         --main-c: #76c5f0;
         --border-r: .2rem;
     }
-    
+
     /** Header **/
-    
     .header-landing {
         display: flex;
-        flex-wrap: nowrap; /* No permitir que los elementos se envuelvan */
-        justify-content: space-between; /* Espacio entre logo y menú */
-        align-items: center; /* Alinear verticalmente */
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
         background: #313638;
-        padding: 0.3rem; /* Ajustar padding del header */
-        width: 100vw; /* Asegurar que el header ocupe todo el ancho de la ventana */
-        position: relative; /* Asegura que se posicione correctamente en la página */
-        left: 50%; /* Centrar el header */
-        right: 50%; /* Centrar el header */
-        transform: translateX(-50%); /* Centrar el header */
-        min-height: 70px; /* Altura mínima */
+        padding: 0.3rem;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        min-height: 70px;
     }
-    /* Logo */
+
     .wrap-logo {
-        flex: 0 1 auto; /* Permitir que el logo se reduzca pero no crezca */
+        flex: 0 1 auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .logo-header {
-        width: 60px; /* Ajustar el tamaño del logo */
+        width: 60px;
         height: auto;
-        max-width: 80%; /* Asegura que el logo se reduzca en pantallas pequeñas */
+        max-width: 80%;
     }
-    
-    /* Menu */
+
     .menu-header-section {
-        flex-grow: 1; /* Permitir que el menú ocupe el espacio disponible */
-        display: flex; /* Usar flex para el menú */
-        justify-content: center; /* Distribuir elementos del menú al máximo */
-        align-items: center; /* Alinear verticalmente */
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0;
         max-width: 90%;
     }
-    
+
     .wrap-menu-header-section {
-        display: flex; /* Usamos flex para el menú */
-        justify-content: space-between; /* Distribuir elementos del menú al máximo */
-        height: auto; /* Ajustar altura automáticamente */
+        display: flex;
+        justify-content: space-between;
+        height: auto;
         align-items: center;
-        flex-wrap: nowrap; /* No permitir que los elementos se envuelvan */
-        margin: 0; /* Eliminar márgenes para evitar el desbordamiento */
-        padding: 0; /* Sin padding para evitar el desbordamiento */
-        width: 100%; /* Hacer que el contenedor del menú ocupe todo el ancho */
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         gap: 0;
     }
 
@@ -243,34 +244,34 @@ h3 {
         padding: 5px;
         border-radius: var(--border-r);
     }
-    
+
     .wrap-menu-header-section ul {
-        display: flex; /* Usamos flex para el menú */
-        height: auto; /* Ajustar altura automáticamente */
-        flex-wrap: nowrap; /* No permitir que los elementos se envuelvan */
-        margin: 0; /* Eliminar márgenes para evitar el desbordamiento */
-        padding: 0; /* Sin padding para evitar el desbordamiento */
-        width: 100%; /* Asegurar que el ul ocupe todo el ancho */
+        display: flex;
+        height: auto;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         justify-content: space-evenly;
     }
-    
+
     .wrap-menu-header-section ul li {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-        padding: 0.1rem 0.2rem; /* Espaciado reducido para evitar el desbordamiento */
+        font-size: 0.8rem;
+        padding: 0.1rem 0.2rem;
         color: #fff;
     }
-
-    /* Footer */
+    
+    /** Footer **/
     .footer-section {
-        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
         background-color: #313638;
-        display: flex; /* Cambiar a flexbox */
-        flex-direction: column; /* Permitir que el contenido se apile verticalmente */
-        align-items: center; /* Centrar el contenido horizontalmente */
-        padding: 0; /* Eliminar el padding para evitar el espacio adicional */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
-    
+
     .wrap-social-logos ul {
         display: flex;
         justify-content: center;
@@ -278,33 +279,36 @@ h3 {
         align-items: start;
         margin: 0;
     }
-    
+
     .social-logo {
         max-width: 50px;
         width: 100%;
         padding: 1rem;
     }
-    
+
     .footer-creds {
         display: flex;
         justify-content: center;
         color: #fff;
-        background-color: #313638;
-        height: auto; /* Cambiar de altura fija a auto para que se ajuste al contenido */
-        padding: 0.5rem 0; /* Agregar un padding pequeño para espacio alrededor del texto */
-        text-align: center; /* Asegurar que el texto esté centrado */
+        height: auto;
+        text-align: center;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-    
+
+    .footer-creds p {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
 }
 
 @media (min-width: 481px) {
+    /** Header **/
     .header-landing {
-        flex-direction: row; /* Mantener en fila para pantallas grandes */
+        flex-direction: row;
     }
 
     .logo-header {
-        width: 120px; /* Tamaño del logo en desktop */
+        width: 120px;
     }
 }
