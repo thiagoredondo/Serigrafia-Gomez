@@ -157,12 +157,12 @@ h3 {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     :root {
@@ -223,7 +223,7 @@ h3 {
     .cta-a {
         color: #fff;
         font-weight: bolder;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         background-color: var(--main-c);
         padding: 5px;
         border-radius: var(--border-r);
@@ -240,7 +240,7 @@ h3 {
     }
 
     .wrap-menu-header-section ul li {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 0.1rem 0.2rem;
         color: #fff;
     }
@@ -299,7 +299,7 @@ h3 {
     }
 
     .footer-creds p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: 100;
     }
     
