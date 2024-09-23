@@ -104,7 +104,8 @@ h3 {
 .wrap-hero-section {
     max-width: 600px;
     color: #fff;
-    padding: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
     font-weight: bold;
 }
 
