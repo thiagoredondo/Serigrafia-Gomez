@@ -1,0 +1,11 @@
+{
+  "name": "preentrega_2_redondo_thiago",
+  "version": "1.0.0",
+  "description": "Este proyecto se busca implementar un sitio web utilizando **HTML** y **CSS**. El propósito del proyecto es aplicar los conceptos aprendidos en cuanto a estructura web, maquetación y diseño responsivo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

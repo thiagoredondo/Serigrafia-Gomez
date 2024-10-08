@@ -1,0 +1,160 @@
+$main-color: #76c5f0;
+$border-radius: .2rem;
+
+// Import
+@import 'header.scss';
+@import 'footer.scss';
+
+/** Estilos Generales **/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+/** Boton **/
+.wrap-cta {
+  padding: 1.5rem 0;
+}
+
+.cta-a {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: $main-color;
+  padding: .5rem 1rem;
+  border-radius: $border-radius;
+}
+
+/** Hero Section **/
+.hero-section {
+  flex: 1;
+  background: url(../img/IMG-20220824-WA0016.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(106, 141, 163, 0.7);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-container {
+  background-color: hsl(197, 7%, 21%, 0.5);
+  padding: 5%;
+  border-radius: 40px;
+  backdrop-filter: blur(4px);
+  border: 5px solid hsl(197, 7%, 21%, 0.5);
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 600px;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 50%;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+
+  .contact-left-title {
+    h2 {
+      font-weight: bolder;
+      color: #fff;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    hr {
+      border: none;
+      width: 100%;
+      height: 5px;
+      background-color: #76c5f0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-inputs {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 500;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:focus {
+      box-shadow: inset 0 0 0 5px #76c5f0;
+    }
+
+    &::placeholder {
+      color: #313638;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #76c5f0, #adadad);
+    cursor: pointer;
+    font-weight: bolder;
+
+    img {
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-a {
+      @include responsive-font-size(0.6rem);
+      padding: 5px;
+  }
+}

@@ -1,0 +1,114 @@
+// Variables
+$main-color: #76c5f0;
+$border-radius: .2rem;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$header-bg-color: #313638;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsive-font-size($size) {
+    font-size: $size;
+}
+
+// Header styles
+.header-landing {
+    @include flex-center;
+    background: $header-bg-color;
+    padding: 0.25rem;
+}
+
+.wrap-logo {
+    @include flex-center;
+}
+
+.logo-header {
+    width: 120px;
+    height: auto;
+}
+
+.menu-header-section {
+    padding: 1rem;
+}
+
+.wrap-menu-header-section {
+    ul {
+        @include flex-center;
+        height: 40px;
+
+        li {
+            @include responsive-font-size(1.1rem);
+            padding: 1.5rem;
+            color: #fff;
+        }
+    }
+}
+
+.wrap-cta {
+    padding: 1.5rem 0;
+}
+
+.cta-a {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color: $main-color;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+}
+
+// Media Queries
+@media (max-width: 480px) {
+    .cta-a {
+        @include responsive-font-size(0.6rem);
+        padding: 5px;
+    }
+
+    .header-landing {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0.3rem;
+        width: 100%;
+        min-height: 70px;
+        transform: translateX(0);
+    }
+
+    .logo-header {
+        width: 60px;
+        max-width: 80%;
+    }
+
+    .menu-header-section {
+        flex-grow: 1;
+        @include flex-center;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .wrap-menu-header-section {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 0;
+
+        ul {
+            justify-content: space-evenly;
+
+            li {
+                @include responsive-font-size(0.6rem);
+                padding: 0.1rem 0.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    .header-landing {
+        @include flex-center;
+        padding: 1rem;
+    }
+}
