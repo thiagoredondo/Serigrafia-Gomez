@@ -20,30 +20,38 @@ $header-bg-color: #313638;
     @include flex-center;
     background: $header-bg-color;
     padding: 0.25rem;
+    justify-content: center; // Cambiado para centrar el contenido
 }
 
 .wrap-logo {
     @include flex-center;
+    margin: 0;
+    padding: 0;
 }
 
 .logo-header {
-    width: 120px;
+    width: 70px;
     height: auto;
 }
 
 .menu-header-section {
-    padding: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center; // Cambiado para centrar el menú
 }
 
 .wrap-menu-header-section {
     ul {
         @include flex-center;
         height: 40px;
+        margin: 0;
+        padding: 0;
 
         li {
-            @include responsive-font-size(1.1rem);
+            @include responsive-font-size(1.2rem);
             padding: 1.5rem;
             color: #fff;
+            list-style: none;
         }
     }
 }
@@ -63,18 +71,12 @@ $header-bg-color: #313638;
 
 // Media Queries
 @media (max-width: 480px) {
-    .cta-a {
-        @include responsive-font-size(0.6rem);
-        padding: 5px;
-    }
-
     .header-landing {
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 0.3rem;
         width: 100%;
         min-height: 70px;
-        transform: translateX(0);
     }
 
     .logo-header {
@@ -84,31 +86,56 @@ $header-bg-color: #313638;
 
     .menu-header-section {
         flex-grow: 1;
-        @include flex-center;
         padding: 0;
-        max-width: 90%;
     }
 
     .wrap-menu-header-section {
         justify-content: space-between;
-        flex-wrap: nowrap;
         width: 100%;
-        gap: 0;
 
         ul {
             justify-content: space-evenly;
 
             li {
-                @include responsive-font-size(0.6rem);
                 padding: 0.1rem 0.2rem;
+                @include responsive-font-size(0.6rem);
             }
         }
     }
 }
 
+
 @media (min-width: 481px) {
     .header-landing {
-        @include flex-center;
         padding: 1rem;
+        justify-content: center; // Cambiado para centrar el contenido
+    }
+
+    .wrap-logo {
+        margin: 0;
+        padding-right: 2.5%;
+    }
+
+    .logo-header {
+        width: 90px;
+    }
+
+    .menu-header-section {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .wrap-menu-header-section {
+        width: 100%;
+        ul {
+            justify-content: center; 
+            margin: 0;
+            padding: 0;
+            gap: 25px;
+
+            li {
+                padding: 0.5rem 1rem;
+            }
+        }
     }
 }

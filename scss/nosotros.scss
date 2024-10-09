@@ -55,6 +55,7 @@ $border-radius: 0.2rem;
   
   /** Hero Section **/
   .hero-section {
+    flex-grow: 1;
     height: 100vh;
     background: url(../img/IMG-20220824-WA0016.jpg);
     background-position: center;
@@ -73,9 +74,34 @@ $border-radius: 0.2rem;
     font-weight: bold;
   }
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    p {
+        @include responsive-font-size(0.8rem);
+        font-weight: 500;
+    }
+
+    h1 {
+        @include responsive-font-size(1.5rem);
+    }
+
     .cta-a {
         @include responsive-font-size(0.6rem);
         padding: 5px;
     }
-}
+
+    .wrap-hero-section {
+        padding: 5%;
+    }
+    }
