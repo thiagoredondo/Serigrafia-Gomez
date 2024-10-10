@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serigrafía Gomez</title>
+    <meta name="description" content="Serigrafía Gómez - Seguimiento de pedidos. Ingresa para verificar el estado de tu pedido en nuestra plataforma." />
+    <title>Serigrafía Gómez | Seguimiento de Pedido</title>
     <link rel="stylesheet" href="../css/seguimiento-pedido.css" />
-    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="icon" href="../img/logo.png" type="image/png" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Serigrafía Gómez - Seguimiento de Pedido" />
+    <meta property="og:description" content="Ingresa para verificar el estado de tu pedido en Serigrafía Gómez." />
+    <meta property="og:image" content="../img/logo.png" />
+    <meta property="og:url" content="www.serigrafiagomez.com.ar/pages/seguimiento-pedido.html" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Seguimiento de Pedido - Serigrafía Gómez",
+        "description": "Verifica el estado de tu pedido en Serigrafía Gómez ingresando tus datos.",
+        "image": "../img/logo.png",
+        "url": "www.serigrafiagomez.com.ar/pages/seguimiento-pedido.html"
+      }
+    </script>
   </head>
   <body>
     <header class="header-landing">
       <div class="wrap-logo">
-        <img
-          src="../img/logo.png"
-          alt="Logo Serigrafía Gomez"
-          class="logo-header"
-        />
+        <img src="../img/logo.png" alt="Logo Serigrafía Gómez" class="logo-header" />
       </div>
 
       <div class="menu-header-section">
@@ -35,12 +50,12 @@
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
           <div class="contact-left-title">
             <h2>Ingresa</h2>
-            <hr>
+            <hr />
           </div>
-          <input type="hidden" name="access_key" value="b7728d75-305e-4796-ba4d-17ee9ff23e4b">
-          <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
-          <input type="password" name="password" placeholder="Contraseña" class="contact-inputs" required>
-          <button type="submit" >Ingresar <img src="../img/arrow_icon.png" alt=""></button>
+          <input type="hidden" name="access_key" value="b7728d75-305e-4796-ba4d-17ee9ff23e4b" />
+          <input type="email" name="email" placeholder="Email" class="contact-inputs" required aria-required="true" />
+          <input type="password" name="password" placeholder="Contraseña" class="contact-inputs" required aria-required="true" />
+          <button type="submit">Ingresar <img src="../img/arrow_icon.png" alt="Icono de flecha" /></button>
         </form>
       </div>
     </section>
@@ -50,39 +65,23 @@
         <div class="wrap-social-logos">
           <ul>
             <li>
-              <a href="https://www.instagram.com/serigrafiagomez/">
-                <img 
-                  src="../img/instagram.svg" 
-                  alt="Instagram" 
-                  class="social-logo" 
-                />
+              <a href="https://www.instagram.com/serigrafiagomez/" aria-label="Enlace a Instagram">
+                <img src="../img/instagram.svg" alt="Instagram" class="social-logo" />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/SerigrafiaGomezS.R.L">
-                <img 
-                  src="../img/facebook.png" 
-                  alt="Facebook" 
-                  class="social-logo" 
-                />
+              <a href="https://www.facebook.com/SerigrafiaGomezS.R.L" aria-label="Enlace a Facebook">
+                <img src="../img/facebook.png" alt="Facebook" class="social-logo" />
               </a>
             </li>
             <li>
-              <a href="https://wa.me/5492915372399">
-                <img 
-                  src="../img/whatsapp.png" 
-                  alt="WhatsApp" 
-                  class="social-logo" 
-                />
+              <a href="https://wa.me/5492915372399" aria-label="Enlace a WhatsApp">
+                <img src="../img/whatsapp.png" alt="WhatsApp" class="social-logo" />
               </a>
             </li>
             <li>
-              <a href="https://maps.app.goo.gl/gC7RhUJZCJnDxdgi8">
-                <img
-                  src="../img/maps.png"
-                  alt="Google Maps"
-                  class="social-logo"
-                />
+              <a href="https://maps.app.goo.gl/gC7RhUJZCJnDxdgi8" aria-label="Enlace a Google Maps">
+                <img src="../img/maps.png" alt="Google Maps" class="social-logo" />
               </a>
             </li>
           </ul>
@@ -90,10 +89,7 @@
       </div>
       <div class="menu-footer-section">
         <div class="footer-creds">
-          <p>
-            © Copyright 2024 - serigrafiagomez.com.ar - Todos los derechos
-            reservados.
-          </p>
+          <p>© Copyright 2024 - serigrafiagomez.com.ar - Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

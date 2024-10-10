@@ -146,9 +146,52 @@ h3 {
   }
 
   /** Header **/
-  .cta-a {
-    font-size: 0.6rem;
-    padding: 5px;
+  .header-landing {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+    min-height: 70px;
+
+    .wrap-logo {
+      flex: 0 1 auto;
+      .logo-header {
+        width: 60px;
+        max-width: 80%;
+      }
+    }
+
+    .menu-header-section {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      max-width: 90%;
+
+      .wrap-menu-header-section {
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        gap: 0;
+
+        ul {
+          justify-content: space-evenly;
+
+          li {
+            font-size: 0.6rem;
+            padding: 0.1rem 0.2rem;
+          }
+        }
+      }
+    }
+
+    .cta-a {
+      font-size: 0.6rem;
+      padding: 5px;
+    }
   }
 
   /** Hero Section **/
