@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header-landing {
   display: flex;
   justify-content: center;
@@ -243,6 +244,10 @@ h3 {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease; /* Agregar transición */
+}
+.wrap-pic-hero-section ul li img:hover {
+  transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
 }
 
 /** Footer **/
