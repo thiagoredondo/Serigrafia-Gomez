@@ -19,25 +19,14 @@ $header-bg-color: #313638;
 .header-landing {
     @include flex-center;
     background: $header-bg-color;
-    padding: 0.25rem;
-    justify-content: center; // Cambiado para centrar el contenido
-}
-
-.wrap-logo {
-    @include flex-center;
-    margin: 0;
     padding: 0;
-}
-
-.logo-header {
-    width: 70px;
-    height: auto;
+    justify-content: center;
 }
 
 .menu-header-section {
     padding: 0;
     display: flex;
-    justify-content: center; // Cambiado para centrar el menú
+    justify-content: center;
 }
 
 .wrap-menu-header-section {
@@ -74,14 +63,18 @@ $header-bg-color: #313638;
     .header-landing {
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 0.3rem;
+        padding: 0;
         width: 100%;
         min-height: 70px;
     }
 
+    .wrap-logo {
+        max-height: 50px;
+    }
+
     .logo-header {
-        width: 60px;
-        max-width: 80%;
+        width: 50px;
+        padding-left: 0;
     }
 
     .menu-header-section {
@@ -106,14 +99,18 @@ $header-bg-color: #313638;
 
 
 @media (min-width: 481px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .header-landing {
-        padding: 1rem;
-        justify-content: center; // Cambiado para centrar el contenido
+        padding: 0;
+        justify-content: center;
     }
 
     .wrap-logo {
         margin: 0;
-        padding-right: 2.5%;
+        padding: 20px;
+        max-width: 130px;
     }
 
     .logo-header {
