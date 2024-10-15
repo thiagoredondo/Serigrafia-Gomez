@@ -123,6 +123,7 @@
   height: 70px;
   align-items: start;
   margin: 0;
+  padding: 0;
 }
 .wrap-social-logos ul .social-logo {
   max-width: 50px;
